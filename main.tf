@@ -3,6 +3,5 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "my-unique-bucket-name111111111"
-  acl    = "private"
+  bucket = "my-unique-bucket-name111111111222"
 }
