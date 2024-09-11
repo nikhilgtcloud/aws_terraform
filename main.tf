@@ -8,7 +8,7 @@ resource "aws_instance" "mumbai" {
 }
 
 provider "aws" {
-  region = "ap-southeast-1s"
+  region = "ap-southeast-1"
   alias = "hyd"
 }
 
