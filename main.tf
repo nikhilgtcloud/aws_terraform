@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "mumbai" {
-  ami           = data.aws_ami.ubuntu.id
+  ami           = ami-0e53db6fd757e38c7
   instance_type = "t2.micro"  # Free tier eligible
 }
 
@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "hyderabad" {
-  ami           = data.aws_ami.ubuntu.id
+  ami           = ami-0e53db6fd757e38c7
   instance_type = "t2.micro"  # Free tier eligible
   provider = aws.hyd
 }
